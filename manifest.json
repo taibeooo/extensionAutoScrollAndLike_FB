@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Auto Scroller",
+  "version": "1.0",
+  "description": "Extension tự động lướt trang Facebook.",
+  "permissions": ["scripting", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
